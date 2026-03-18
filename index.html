@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BLADE — Premium Barbershop</title>
+  <meta name="description" content="BLADE — Where precision meets style. Book your cut today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <nav id="nav">
+    <a href="#" class="nav-logo">BL<span>A</span>DE</a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#barbers">Barbers</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#book" class="nav-cta">Book Now</a>
+    <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span></button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#services" class="mm-link">Services</a></li>
+      <li><a href="#barbers" class="mm-link">Barbers</a></li>
+      <li><a href="#gallery" class="mm-link">Gallery</a></li>
+      <li><a href="#contact" class="mm-link">Contact</a></li>
+      <li><a href="#book" class="mm-link mm-cta">Book Now</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-noise"></div>
+      <div class="hero-vignette"></div>
+      <div class="razor-lines">
+        <div class="razor-line rl-1"></div>
+        <div class="razor-line rl-2"></div>
+        <div class="razor-line rl-3"></div>
+      </div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-tag"><span class="tag-dot"></span>Est. 2008 &middot; Brooklyn, NY</div>
+      <h1 class="hero-headline">
+        <span class="hh-line">PRECISION</span>
+        <span class="hh-divider">
+          <span class="hh-rule"></span>
+          <em class="hh-word">is the</em>
+          <span class="hh-rule"></span>
+        </span>
+        <span class="hh-line">ART</span>
+      </h1>
+      <p class="hero-sub">Every cut tells a story. Come write yours.</p>
+      <div class="hero-actions">
+        <a href="#book" class="btn-primary">Reserve Your Seat</a>
+        <a href="#services" class="btn-ghost">See Services</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="stat-num" data-target="4800">0</span>
+        <span class="stat-label">Cuts This Year</span>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <span class="stat-num" data-target="98">0</span>
+        <span class="stat-label">% Satisfaction</span>
+      </div>
+      <div class="hero-stat-divider"></div>
+      <div class="hero-stat">
+        <span class="stat-num" data-target="6">0</span>
+        <span class="stat-label">Master Barbers</span>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>BLADE CUTS</span><span class="marquee-dot">&#10022;</span>
+      <span>FRESH FADES</span><span class="marquee-dot">&#10022;</span>
+      <span>CLEAN LINES</span><span class="marquee-dot">&#10022;</span>
+      <span>SHARP STYLE</span><span class="marquee-dot">&#10022;</span>
+      <span>BLADE CUTS</span><span class="marquee-dot">&#10022;</span>
+      <span>FRESH FADES</span><span class="marquee-dot">&#10022;</span>
+      <span>CLEAN LINES</span><span class="marquee-dot">&#10022;</span>
+      <span>SHARP STYLE</span><span class="marquee-dot">&#10022;</span>
+      <span>BLADE CUTS</span><span class="marquee-dot">&#10022;</span>
+      <span>FRESH FADES</span><span class="marquee-dot">&#10022;</span>
+      <span>CLEAN LINES</span><span class="marquee-dot">&#10022;</span>
+      <span>SHARP STYLE</span><span class="marquee-dot">&#10022;</span>
+    </div>
+  </div>
+
+  <!-- SERVICES - HORIZONTAL SCROLL -->
+  <section id="services">
+    <div class="services-header">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">Our <em>Services</em></h2>
+      <p class="services-hint">Drag to explore</p>
+    </div>
+    <div class="services-track-wrap" id="servicesTrack">
+      <div class="services-track">
+        <div class="service-card sc-featured">
+          <div class="sc-number">01</div>
+          <div class="sc-content">
+            <h3>The Signature Cut</h3>
+            <p>Our flagship service. A full consultation, precision cut, hot towel finish, and styled to perfection.</p>
+            <div class="sc-price">$65</div>
+            <div class="sc-duration">60 min</div>
+          </div>
+          <a href="#book" class="sc-cta">Book &rarr;</a>
+        </div>
+        <div class="service-card">
+          <div class="sc-number">02</div>
+          <div class="sc-content">
+            <h3>Fade &amp; Taper</h3>
+            <p>Classic skin fade or taper cut executed with surgical precision. Every gradient, exact.</p>
+            <div class="sc-price">$45</div>
+            <div class="sc-duration">45 min</div>
+          </div>
+          <a href="#book" class="sc-cta">Book &rarr;</a>
+        </div>
+        <div class="service-card">
+          <div class="sc-number">03</div>
+          <div class="sc-content">
+            <h3>Beard Sculpt</h3>
+            <p>Shape, define, and condition. Hot lather, straight razor edging, and beard oil finish.</p>
+            <div class="sc-price">$35</div>
+            <div class="sc-duration">30 min</div>
+          </div>
+          <a href="#book" class="sc-cta">Book &rarr;</a>
+        </div>
+        <div class="service-card">
+          <div class="sc-number">04</div>
+          <div class="sc-content">
+            <h3>The Full Blade</h3>
+            <p>Cut + beard combo. The complete grooming experience, start to finish.</p>
+            <div class="sc-price">$90</div>
+            <div class="sc-duration">90 min</div>
+          </div>
+          <a href="#book" class="sc-cta">Book &rarr;</a>
+        </div>
+        <div class="service-card">
+          <div class="sc-number">05</div>
+          <div class="sc-content">
+            <h3>Kids Cut</h3>
+            <p>Patient, precise cuts for young gentlemen. Age 12 and under welcome.</p>
+            <div class="sc-price">$30</div>
+            <div class="sc-duration">30 min</div>
+          </div>
+          <a href="#book" class="sc-cta">Book &rarr;</a>
+        </div>
+        <div class="service-card sc-last">
+          <div class="sc-number">06</div>
+          <div class="sc-content">
+            <h3>VIP Package</h3>
+            <p>Priority booking, champagne, full service. For the man who demands the best.</p>
+            <div class="sc-price">$150</div>
+            <div class="sc-duration">120 min</div>
+          </div>
+          <a href="#book" class="sc-cta">Book &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="about-img-wrap">
+          <div class="about-img-placeholder"><div class="img-icon">&#9988;</div></div>
+          <div class="about-badge">
+            <span class="badge-num">18</span>
+            <span class="badge-text">Years of<br>Mastery</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="section-label">Our Story</div>
+        <h2 class="section-title">Born in the<br><em>chair.</em></h2>
+        <p>BLADE started as a single chair in a Brooklyn basement in 2008. No frills. Just a man, his tools, and an obsession with the perfect cut.</p>
+        <p>Today we have six master barbers, a full grooming lounge, and a waitlist that speaks for itself. The obsession hasn't changed.</p>
+        <div class="about-values">
+          <div class="about-value"><span class="av-icon">&#9642;</span><span>Precision over speed</span></div>
+          <div class="about-value"><span class="av-icon">&#9642;</span><span>Every client, first class</span></div>
+          <div class="about-value"><span class="av-icon">&#9642;</span><span>Tools maintained daily</span></div>
+        </div>
+        <a href="#barbers" class="btn-outline-red">Meet the Team &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BARBERS -->
+  <section id="barbers">
+    <div class="container">
+      <div class="section-header-inline">
+        <div>
+          <div class="section-label">The Crew</div>
+          <h2 class="section-title">Master <em>Barbers</em></h2>
+        </div>
+        <a href="#book" class="btn-ghost-sm">Book Any Chair &rarr;</a>
+      </div>
+      <div class="barbers-grid">
+        <div class="barber-card bc-large">
+          <div class="barber-img-wrap">
+            <div class="barber-img-placeholder bi-1"></div>
+            <div class="barber-overlay"><a href="#book" class="barber-book-btn">Book Marcus</a></div>
+          </div>
+          <div class="barber-info">
+            <h3>Marcus Reid</h3>
+            <span class="barber-title">Head Barber &middot; Founder</span>
+            <p class="barber-spec">Fades &middot; Textured Cuts &middot; Razor Work</p>
+          </div>
+        </div>
+        <div class="barber-card">
+          <div class="barber-img-wrap">
+            <div class="barber-img-placeholder bi-2"></div>
+            <div class="barber-overlay"><a href="#book" class="barber-book-btn">Book Darnell</a></div>
+          </div>
+          <div class="barber-info">
+            <h3>Darnell Cruz</h3>
+            <span class="barber-title">Senior Barber</span>
+            <p class="barber-spec">Afros &middot; Waves &middot; Beard Design</p>
+          </div>
+        </div>
+        <div class="barber-card">
+          <div class="barber-img-wrap">
+            <div class="barber-img-placeholder bi-3"></div>
+            <div class="barber-overlay"><a href="#book" class="barber-book-btn">Book Jordan</a></div>
+          </div>
+          <div class="barber-info">
+            <h3>Jordan Steele</h3>
+            <span class="barber-title">Senior Barber</span>
+            <p class="barber-spec">Skin Fades &middot; Line Art &middot; Designs</p>
+          </div>
+        </div>
+        <div class="barber-card">
+          <div class="barber-img-wrap">
+            <div class="barber-img-placeholder bi-4"></div>
+            <div class="barber-overlay"><a href="#book" class="barber-book-btn">Book Kai</a></div>
+          </div>
+          <div class="barber-info">
+            <h3>Kai Nakamura</h3>
+            <span class="barber-title">Barber</span>
+            <p class="barber-spec">Japanese Cuts &middot; Classic Taper</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="gallery-header">
+      <div class="section-label">The Work</div>
+      <h2 class="section-title">Fresh <em>Cuts</em></h2>
+    </div>
+    <div class="gallery-mosaic">
+      <div class="gm-item gm-tall gp-1"><div class="gm-label">Skin Fade</div></div>
+      <div class="gm-item gm-wide gp-2"><div class="gm-label">Textured Crop</div></div>
+      <div class="gm-item gp-3"><div class="gm-label">Beard Sculpt</div></div>
+      <div class="gm-item gp-4"><div class="gm-label">Classic Taper</div></div>
+      <div class="gm-item gm-tall gp-5"><div class="gm-label">Line Art</div></div>
+      <div class="gm-item gp-6"><div class="gm-label">Waves</div></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-label centered">Client Words</div>
+      <h2 class="section-title centered">They <em>said it.</em></h2>
+      <div class="testimonials-grid">
+        <div class="testi-card tc-large">
+          <div class="testi-quote">&ldquo;</div>
+          <p>Marcus doesn't just cut hair &mdash; he reads your face, your style, your personality, and then executes something you didn't even know you wanted. Every single time.</p>
+          <div class="testi-author">
+            <div class="testi-avatar ta-1"></div>
+            <div><strong>James Okafor</strong><span>Regular &middot; 4 years</span></div>
+          </div>
+          <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">&ldquo;</div>
+          <p>Best fade in Brooklyn, period. I've tried six other spots. Nobody comes close to Darnell.</p>
+          <div class="testi-author">
+            <div class="testi-avatar ta-2"></div>
+            <div><strong>Tyler Banks</strong><span>Regular &middot; 2 years</span></div>
+          </div>
+          <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-quote">&ldquo;</div>
+          <p>The atmosphere, the music, the drinks &mdash; walking into BLADE feels like a ritual. Then Jordan gets to work and you forget everything else.</p>
+          <div class="testi-author">
+            <div class="testi-avatar ta-3"></div>
+            <div><strong>Malik Santos</strong><span>Regular &middot; 3 years</span></div>
+          </div>
+          <div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="book">
+    <div class="book-inner">
+      <div class="book-left">
+        <div class="section-label on-dark">Reservations</div>
+        <h2 class="book-title">Reserve<br>Your <em>Seat.</em></h2>
+        <p class="book-sub">Walk-ins welcome. Appointments prioritized.</p>
+        <div class="book-hours">
+          <div class="bh-row"><span>Mon &ndash; Fri</span><span>9:00 AM &ndash; 9:00 PM</span></div>
+          <div class="bh-row"><span>Saturday</span><span>8:00 AM &ndash; 8:00 PM</span></div>
+          <div class="bh-row"><span>Sunday</span><span>10:00 AM &ndash; 6:00 PM</span></div>
+        </div>
+      </div>
+      <div class="book-right">
+        <form class="book-form" id="bookForm">
+          <div class="form-row">
+            <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your name" /></div>
+            <div class="form-group"><label>Phone</label><input type="tel" placeholder="+1 (000) 000-0000" /></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Service</label>
+              <select>
+                <option value="">Select a service</option>
+                <option>The Signature Cut &mdash; $65</option>
+                <option>Fade &amp; Taper &mdash; $45</option>
+                <option>Beard Sculpt &mdash; $35</option>
+                <option>The Full Blade &mdash; $90</option>
+                <option>Kids Cut &mdash; $30</option>
+                <option>VIP Package &mdash; $150</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Barber</label>
+              <select>
+                <option value="">Any barber</option>
+                <option>Marcus Reid</option>
+                <option>Darnell Cruz</option>
+                <option>Jordan Steele</option>
+                <option>Kai Nakamura</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Date</label><input type="date" /></div>
+            <div class="form-group">
+              <label>Time</label>
+              <select>
+                <option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option>
+                <option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option>
+                <option>3:00 PM</option><option>4:00 PM</option><option>5:00 PM</option>
+                <option>6:00 PM</option><option>7:00 PM</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn-submit">Confirm Booking</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-label">Find Us</div>
+          <h2 class="section-title">Come <em>In.</em></h2>
+          <div class="contact-details">
+            <div class="cd-item">
+              <span class="cd-icon">&#9672;</span>
+              <div><strong>Address</strong><span>247 Nostrand Ave, Brooklyn, NY 11216</span></div>
+            </div>
+            <div class="cd-item">
+              <span class="cd-icon">&#9672;</span>
+              <div><strong>Phone</strong><span>(718) 555-0192</span></div>
+            </div>
+            <div class="cd-item">
+              <span class="cd-icon">&#9672;</span>
+              <div><strong>Email</strong><span>hello@blade-barbershop.com</span></div>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="#" class="cs-link">Instagram</a>
+            <a href="#" class="cs-link">TikTok</a>
+            <a href="#" class="cs-link">Facebook</a>
+          </div>
+        </div>
+        <div class="contact-map">
+          <div class="map-placeholder"><span>MAP EMBED</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-logo">BL<span>A</span>DE</div>
+      <p class="footer-tagline">Precision is the art.</p>
+    </div>
+    <div class="footer-mid">
+      <div class="footer-col">
+        <strong>Services</strong>
+        <a href="#">Signature Cut</a>
+        <a href="#">Fade &amp; Taper</a>
+        <a href="#">Beard Sculpt</a>
+        <a href="#">VIP Package</a>
+      </div>
+      <div class="footer-col">
+        <strong>Visit</strong>
+        <a href="#">247 Nostrand Ave</a>
+        <a href="#">Brooklyn, NY 11216</a>
+        <a href="#">(718) 555-0192</a>
+      </div>
+      <div class="footer-col">
+        <strong>Follow</strong>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">Facebook</a>
+      </div>
+      <div class="footer-col">
+        <strong>Hours</strong>
+        <a href="#">Mon&ndash;Fri 9am&ndash;9pm</a>
+        <a href="#">Sat 8am&ndash;8pm</a>
+        <a href="#">Sun 10am&ndash;6pm</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 BLADE Barbershop. All rights reserved.</span>
+      <span>Template by <a href="#">KuberaLabz</a></span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
