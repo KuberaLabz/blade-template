@@ -794,10 +794,10 @@ body:hover .cursor-follower { opacity: 1; }
 }
 .bc-large .barber-img-placeholder { aspect-ratio: 3/4; }
 
-.bi-1 { background: linear-gradient(145deg, #1a1010, #2a1515); }
-.bi-2 { background: linear-gradient(145deg, #101018, #151520); }
-.bi-3 { background: linear-gradient(145deg, #0f1a10, #141f15); }
-.bi-4 { background: linear-gradient(145deg, #1a1508, #201a0a); }
+.bi-1 { background: url("https://media.base44.com/images/public/69b2ee3113ccfbf0b800b1d9/320822fcc_generated_image.png") center/cover no-repeat; }
+.bi-2 { background: url("https://media.base44.com/images/public/69b2ee3113ccfbf0b800b1d9/7274553ef_generated_image.png") center/cover no-repeat; }
+.bi-3 { background: url("https://media.base44.com/images/public/69b2ee3113ccfbf0b800b1d9/fd8f20074_generated_image.png") center/cover no-repeat; }
+.bi-4 { background: url("https://media.base44.com/images/public/69b2ee3113ccfbf0b800b1d9/ad228e812_generated_image.png") center/cover no-repeat; }
 
 .barber-overlay {
   position: absolute;
@@ -874,12 +874,12 @@ body:hover .cursor-follower { opacity: 1; }
 .gm-item.gm-tall { grid-row: span 2; }
 .gm-item.gm-wide { grid-column: span 2; }
 
-.gp-1 { background: linear-gradient(135deg, #1a0608 0%, #2a1015 100%); }
-.gp-2 { background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 100%); }
-.gp-3 { background: linear-gradient(135deg, #0a1014 0%, #121a20 100%); }
-.gp-4 { background: linear-gradient(135deg, #100a0a 0%, #1a1010 100%); }
-.gp-5 { background: linear-gradient(135deg, #080d0a 0%, #101810 100%); }
-.gp-6 { background: linear-gradient(135deg, #0d0d14 0%, #1a1a20 100%); }
+.gp-1 { background: url("https://media.base44.com/images/public/69b2ee3113ccfbf0b800b1d9/fd8f20074_generated_image.png") center/cover no-repeat; }
+.gp-2 { background: url("https://media.base44.com/images/public/69b2ee3113ccfbf0b800b1d9/320822fcc_generated_image.png") center/cover no-repeat; }
+.gp-3 { background: url("https://media.base44.com/images/public/69b2ee3113ccfbf0b800b1d9/7274553ef_generated_image.png") center/cover no-repeat; }
+.gp-4 { background: url("https://media.base44.com/images/public/69b2ee3113ccfbf0b800b1d9/7cf29af1b_generated_image.png") center/cover no-repeat; }
+.gp-5 { background: url("https://media.base44.com/images/public/69b2ee3113ccfbf0b800b1d9/6c985ce5d_generated_image.png") center/cover no-repeat; }
+.gp-6 { background: url("https://media.base44.com/images/public/69b2ee3113ccfbf0b800b1d9/ad228e812_generated_image.png") center 30%/cover no-repeat; }
 
 .gm-item::after {
   content: 'ADD PHOTO';
