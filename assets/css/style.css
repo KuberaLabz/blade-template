@@ -319,7 +319,13 @@ body:hover .cursor-follower { opacity: 1; }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 50% 60%, #1a0608 0%, #0a0a0a 60%);
+  background: url("https://media.base44.com/images/public/69b2ee3113ccfbf0b800b1d9/94ef503f4_generated_image.png") center/cover no-repeat;
+}
+.hero-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 60%, rgba(26,6,8,0.72) 0%, rgba(10,10,10,0.88) 100%);
 }
 .hero-noise {
   position: absolute; inset: 0;
@@ -682,7 +688,7 @@ body:hover .cursor-follower { opacity: 1; }
 .about-img-placeholder {
   width: 100%;
   aspect-ratio: 4/5;
-  background: var(--black-3);
+  background: url("https://media.base44.com/images/public/69b2ee3113ccfbf0b800b1d9/f038691e1_generated_image.png") center/cover no-repeat;
   border-radius: var(--r-lg);
   border: 1px solid rgba(255,255,255,0.06);
   display: flex;
@@ -691,16 +697,7 @@ body:hover .cursor-follower { opacity: 1; }
   overflow: hidden;
 }
 .about-img-placeholder::after {
-  content: 'ADD PHOTO';
-  font-size: 0.6rem;
-  font-weight: 600;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.1);
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  content: '';
 }
 .img-icon {
   font-size: 4rem;
